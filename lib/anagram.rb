@@ -14,16 +14,13 @@ class Anagram
       word = @word.split("")
       test = anagram.split("")
       
-      match = true
-      
       if word.length == test.length
         test = test.reject { word.include?(test) } 
-        if test.length 
+        if test.length == 0 
+          matches << anagram
+        end
       end
-      
-      if match == true
-        matches << anagram
-      end
+
     end
     matches
   end
