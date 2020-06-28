@@ -7,21 +7,18 @@ class Anagram
   end
   
   def match(anagrams)
-    word = @word.split("")
+    
     matches = []
     
     anagrams.each do |anagram|
+      word = @word.split("")
       test = anagram.split("")
       i = 0
       match = true
       
       if word.length == test.length
-        while i < anagram.length do
-          if word[i].include?(test[i]) == false
-            binding.pry
-            match = false
-          end
-          i += 1
+        while word.length > 0 do
+          if anagram.include(word[0])
         end
       end
       
