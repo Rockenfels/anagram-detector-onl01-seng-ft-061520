@@ -13,11 +13,9 @@ class Anagram
     anagrams.each do |anagram|
       word = @word.split("").sort
       test = anagram.split("").sort
-      
-      if word.length == test.length
-        word.each do |letter|
-          
-        end
+      binding.pry
+      if word == test
+        matches << anagram
       end
 
     end
