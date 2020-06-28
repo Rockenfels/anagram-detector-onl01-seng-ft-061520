@@ -17,9 +17,7 @@ class Anagram
       match = true
       
       if word.length == test.length
-        while word.length > 0 do
-          if anagram.include(word[0])
-        end
+        test = test.reject { |x| word.include?(x) } 
       end
       
       if match == true
