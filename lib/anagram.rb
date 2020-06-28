@@ -15,11 +15,7 @@ class Anagram
       test = anagram.split("")
       
       if word.length == test.length
-        test = test.reject { word.include?(test) } 
-        binding.pry
-        if test.length == 0 
-          matches << anagram
-        end
+        word.each
       end
 
     end
