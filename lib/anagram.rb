@@ -15,7 +15,9 @@ class Anagram
       test = anagram.split("")
       
       if word.length == test.length
-        word.each
+        word.each do |letter|
+          
+        end
       end
 
     end
