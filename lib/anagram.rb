@@ -13,11 +13,12 @@ class Anagram
     anagrams.each do |anagram|
       word = @word.split("")
       test = anagram.split("")
-      i = 0
+      
       match = true
       
       if word.length == test.length
-        test = test.reject { |x| word.include?(x) } 
+        test = test.reject { word.include?(test) } 
+        if test.length 
       end
       
       if match == true
