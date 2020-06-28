@@ -1,4 +1,4 @@
-# Your code goes here!
+require 'pry'
 class Anagram
   attr_accessor :word
   
@@ -18,6 +18,7 @@ class Anagram
       if word.length == test.length
         while i < anagram.length do
           if word[i].include?(test[i]) == false
+            binding.pry
             match = false
           end
           i += 1
