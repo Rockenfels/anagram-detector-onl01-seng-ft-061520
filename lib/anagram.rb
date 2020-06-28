@@ -13,7 +13,7 @@ class Anagram
     anagrams.each do |anagram|
       word = @word.split("").sort
       test = anagram.split("").sort
-      binding.pry
+      
       if word == test
         matches << anagram
       end
